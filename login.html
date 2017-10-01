@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=2.5">
+		<title>Formulario</title>
+		<link rel="stylesheet" href="fonts/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="shorcut icon" href="imagenes\blueshop.png">
+
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+
+	<script>
+
+				$(document).on('ready',function()
+					{
+						$('#id_vista').on('click',function(e)
+						{
+							e.preventDefault();
+
+							var current = $(this).attr('action');
+
+							if(current =='hide')
+							{
+								$(this).prev().attr('type','text');
+								$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close').attr('action','show');
+
+							}
+
+							if(current =='show')
+							{
+								$(this).prev().attr('type','text');
+								$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open').attr('action','hide');
+
+							}
+
+
+						})
+
+					})
+			</script>
+
+			<style>
+
+				body
+				{
+
+					background: url(recursos/img/fondo9.jpg);
+					background-repeat: no-repeat;
+					background-attachment: fixed;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-ms-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+					background-size: cover;
+				}
+
+
+
+				*
+				{
+				padding: 0;
+				margin: 0;
+				}
+
+				.class_container_general
+				{
+
+
+					width: 600px;
+					height: 500px;
+					border: 1px solid black;
+					margin: auto;
+					border-radius: 10px;
+					margin-top: 120px;
+					text-align: center;
+					box-shadow: 5px 5px 100px rgb(0,0,0);
+					border: none;
+				}
+
+
+
+
+
+				.class_img
+				{
+					width: 150px;
+					height: 150px;
+					border-radius: 100%;
+					margin-top: -80px;
+
+
+				}
+
+				.class_user
+				{
+
+					border-radius: 5px;
+					width: 300px;
+					height: 30px;
+					font-size: 20px;
+
+				}
+
+
+				input[type="text"]
+				{
+					border-radius: 5px;
+					width: 380px;
+					height: 45px;
+					font-size: 20px;
+					margin-top: 40px;
+					margin-left: -40px;
+					box-shadow: 4px 2px 3px rgba(0, 0, 0, .6);
+					border: none;
+					padding-left: 45px;
+
+
+				}
+
+				 input[type="Password"]
+				{
+					border-radius: 5px;
+					width: 340px;
+					height: 45px;
+					font-size: 20px;
+					margin-top: 40px;
+					margin-left: -80px;
+					box-shadow: 4px 2px 3px rgba(0, 0, 0, .6);
+					border: none;
+					padding-left: 45px;
+					border-top-right-radius: 0;
+					border-bottom-right-radius:0;
+
+				}
+
+				.class_ing
+				{
+
+					border-radius: 5px;
+					width: 150px;
+					height: 50px;
+					font-size: 20px;
+					margin-top: 70px;
+					cursor: pointer;
+					background-color: rgb(89,158,127);
+					border: none;
+					color: #fff;
+					box-shadow: 4px 2px 3px rgba(0, 0, 0, .6);
+
+				}
+
+				.class_con_user::before
+				{
+
+					content:"\ec90" ;
+					position: relative;
+					font-family: "icomoon" ;
+					font-size:35px;
+					color: black ;
+					padding-top: 40px;
+					left: 5px ;
+					top: 8px;
+
+				}
+				.class_con_pass::before
+				{
+
+					content: "\ec2d";
+					position: relative;
+					font-family: "icomoon";
+					font-size: 35px;
+					color: black;
+					padding-top: 40px;
+					left: -35px ;
+					top: 8px;
+
+				}
+
+				.input-group-addon
+				{
+					display: block;
+					width: 45px;
+					height: 45.5px;
+					cursor: pointer;
+					padding-top: 15px;
+					margin-top: -46px;
+					margin-left: 448px;
+					border: 2px solid white;
+
+
+				}
+
+				.class-con-recuerdame
+				{
+					margin-right: 270px;
+					margin-top: 10px;
+					text-align: center;
+				}
+
+				label
+				{
+					color: white;
+
+				}
+
+				.class_recuerdame
+				{
+					position: relative;
+					top: 3px;
+					width: 20px;
+					height: 20px;
+					cursor: pointer;
+				}
+
+			</style>
+
+
+
+	</head>
+	<body>
+		<form action="">
+
+			<div class="class_container_general">
+				<div class="class_con_img">
+						<img src="recursos/img/user1.jpg" alt="Soy una imagen!!" class="class_img">
+				</div>
+
+				<div class="class_con_user">
+						<input type="text" placeholder="Ingrese Usuario" class="class_user" name="name_user" id="id_user">
+				</div>
+
+				<div class="class_con_pass">
+						<input type="Password" placeholder="Ingrese Password" class="class_pass" name="name_pass" id="id_pass">
+						<span id="id_vista" action="hide" class="input-group-addon glyphicon glyphicon-eye-open " name="name_vista"></span>
+				</div>
+				<div class="class-con-recuerdame">
+						<input class="class_recuerdame" type="checkbox"  id="id_recuerdame" name="name_recuerdame" >
+						<label for="id_recuerdame">Recuerdame</label>
+				</div>
+
+				<div class="class_con_ing">
+						<input type="submit" value="Ingresar"  class="class_ing" name="name_ing" id="id_ing">
+				</div>
+
+		</div>
+		</form>
+
+
+
+
+
+	</body>
+	</html>

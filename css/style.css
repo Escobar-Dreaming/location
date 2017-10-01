@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+body {
+  font-family: "PT Serif", serif; }
+
+.class_nav_bar {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000; }
+
+.pan {
+  cursor: pointer;
+  color: #fff;
+  width: 100px;
+  height: 100px; }
+
+.class_logo {
+  color: white !important; }
+  .class_logo:hover {
+    text-shadow: 1px 1px 20px white !important; }
+
+.class_link1, .class_link2 {
+  color: white !important; }
+  .class_link1:hover, .class_link2:hover {
+    text-shadow: 1px 1px 20px white !important; }
+
+.nav-item {
+  margin-left: 10px; }
+
+.class_text_login {
+  color: white !important;
+  text-decoration: none !important;
+  margin-left: 10px; }
+  .class_text_login:hover {
+    text-shadow: 1px 1px 20px white !important; }
+
+.container_presentacion {
+  color: black !important;
+  padding-top: 50px;
+  position: relative;
+  top: 200px; }
+  .container_presentacion h1 {
+    font-size: 80px; }
+  .container_presentacion p {
+    font-size: 30px; }
+
+.class_nav_bar2 {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  width: 100% !important;
+  position: fixed;
+  z-index: 1000;
+  max-height: auto; }
+
+.pan2 {
+  font-family: icomoon;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px !important;
+  font-weight: bold; }
+
+.class_section_img1 {
+  background: url("../recursos/img/mapa2.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  height: 800px;
+  color: white; }
+
+.class_section_location {
+  color: white;
+  background: url("../recursos/img/mapa4.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  height: 900px; }
+
+iframe {
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3); }
+
+form {
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+  padding: 10px; }
+
+.cuerpo {
+  padding-top: 150px; }
+
+.class_footer_inicio {
+  background: #000;
+  color: white;
+  height: auto;
+  font-size: 30px;
+  font-family: "icomoon" !important; }
+
+.class_section_footer {
+  position: relative;
+  left: 1000px;
+  top: -60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 300px; }
+
+.item {
+  text-decoration: none !important;
+  filter: grayscale(100%); }
+  .item:hover {
+    filter: grayscale(0); }
+
+.class_visitanos {
+  position: relative;
+  left: 1000px;
+  top: -40px; }
+
+.class_logo_footer {
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+  color: white !important; }
+  .class_logo_footer .item_footer_logo {
+    color: white !important;
+    text-decoration: none; }
+    .class_logo_footer .item_footer_logo:hover {
+      text-shadow: 1px 1px 40px white !important; }
+
+.class_legal_privacidad {
+  box-sizing: border-box;
+  text-align: center; }
+  .class_legal_privacidad ul {
+    list-style: none; }
+    .class_legal_privacidad ul li {
+      display: inline; }
+      .class_legal_privacidad ul li a {
+        color: #716c6a;
+        font-size: 12px;
+        text-decoration: none; }
+        .class_legal_privacidad ul li a:hover {
+          color: #1e571a; }
+
+.class_copyright {
+  text-align: center;
+  color: #716c6a;
+  font-size: 12px; }
+  .class_copyright p {
+    line-height: 1px; }
+
+.class_footer_inicio2 {
+  background: #000;
+  color: white;
+  height: auto;
+  font-size: 30px;
+  font-family: "icomoon" !important; }
+
+.class_section_footer2 {
+  position: relative;
+  left: 1000px;
+  top: -60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 300px; }
+
+.item2 {
+  text-decoration: none !important;
+  filter: grayscale(100%); }
+  .item2:hover {
+    filter: grayscale(0); }
+
+.class_visitanos2 {
+  position: relative;
+  left: 1000px;
+  top: -40px; }
+
+.class_logo_footer2 {
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+  color: white !important; }
+  .class_logo_footer2 .item_footer_logo {
+    color: white !important;
+    text-decoration: none; }
+    .class_logo_footer2 .item_footer_logo:hover {
+      text-shadow: 1px 1px 40px white !important; }
+
+.class_legal_privacidad2 {
+  box-sizing: border-box;
+  text-align: center; }
+  .class_legal_privacidad2 ul {
+    list-style: none; }
+    .class_legal_privacidad2 ul li {
+      display: inline; }
+      .class_legal_privacidad2 ul li a {
+        color: #716c6a;
+        font-size: 12px;
+        text-decoration: none; }
+        .class_legal_privacidad2 ul li a:hover {
+          color: #1e571a; }
+
+.class_copyright2 {
+  text-align: center;
+  color: #716c6a;
+  font-size: 12px; }
+  .class_copyright2 p {
+    line-height: 1px; }
+
+/*# sourceMappingURL=style.css.map */
